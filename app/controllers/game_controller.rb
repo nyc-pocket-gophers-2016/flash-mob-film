@@ -18,7 +18,7 @@ end
 
 require 'pry'
 get "/rounds/:round_id/cards/:card_id" do
-  binding.pry
+
   @round = Round.find_by(id: params[:round_id])
   @card = Card.find(params[:card_id])
 
