@@ -6,6 +6,6 @@ card_four = Card.create(question: "Vito Corleone died on the sidewalk after bein
 card_five = Card.create(question: "The gun that Michael used to kill Sollozzo was hidden under a sink", answer: "false", deck_id: 1, deck: godfather_deck)
 card_six = Card.create(question: "Michael's first wife was named Apollonia", answer: "true", deck_id: 1, deck: godfather_deck)
 card_seven = Card.create(question: "'Hitting the Mattresses' means ducking from gunfire", answer: "false", deck_id: 1, deck: godfather_deck)
-card_seven = Card.create(question: "Tattaglia is the name of one of the other five families in create York", answer: "true", deck_id: 1, deck: godfather_deck)
+card_seven = Card.create(question: "Tattaglia is the name of one of the other five families in New York", answer: "true", deck_id: 1, deck: godfather_deck)
 card_eight = Card.create(question: "Clemenza turns out to be a traitor towards the Corleone family", answer: "false", deck_id: 1, deck: godfather_deck)
 card_nine = Card.create(question: "Spaghetti was Sollozzo's last meal", answer: "false", deck_id: 1, deck: godfather_deck)
