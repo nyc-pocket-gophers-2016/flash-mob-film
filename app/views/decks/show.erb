@@ -1,0 +1,7 @@
+<h1>You have selected the <%= @deck.subject %> deck!</h1>
+
+<form action='/rounds' method='post'>
+    <input type="hidden" name="deck_id" value="<%=@deck.id%>">
+    <input type='submit' value='Start mobbing!'>
+</form>
+

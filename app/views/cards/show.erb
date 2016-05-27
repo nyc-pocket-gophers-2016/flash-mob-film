@@ -1,0 +1,9 @@
+<h3>Answer true or false</h3>
+
+<%= @card.question %>
+
+<form action='/guesses' method='post'>
+    <input type='hidden' name='card_id' value='<%=@card.id%>'>
+    <input type='hidden' name='round_id' value='<%=@round.id%>'>
+    <input type='submit' value='Submit True or False!'>
+  </form>
