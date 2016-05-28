@@ -6,7 +6,7 @@ end
 
 # Make a new account - post method for submit
 post "/users" do
-  @user = User.new(first_name: params[:first_name], last_name: params[:last_name], email: params[:email], password: params[:password])
+  @user = User.new(username: params[:username], password: params[:password])
   if @user.save
     redirect "/users/#{@user.id}"
   else
@@ -23,7 +23,7 @@ end
 
 put "/users/:id" do
   @user = User.find_by(id: params[:id])
-  @user.assign_attributes(first_name: params[:first_name], last_name: params[:last_name], email: params[:email], password: params[:password])
+  @user.assign_attributes(username: params[:username], password: params[:password])
   if @user.save
     redirect "/users/#{@user.id}"
   else 

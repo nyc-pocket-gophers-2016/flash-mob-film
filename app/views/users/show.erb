@@ -6,8 +6,7 @@
   <% end %>
 <% end %>
 
-<div><%= @user.first_name %> <%= @user.last_name %> </div>
-<div><%= @user.email %></div>
+<div><%= @user.username %> </div>
 
 <div>
   <a href="/users/<%= @user.id %>/edit">Click here to edit your mobster profile</a>
@@ -16,6 +15,6 @@
 <div>
   <form method="post" action="/users/<%= @user.id %>">
     <input value="delete" type="hidden" name="_method">
-    <input type="submit" value="Delete your account">
+    <input type="submit" value="Delete your account" class="form-button">
   </form>
 </div>

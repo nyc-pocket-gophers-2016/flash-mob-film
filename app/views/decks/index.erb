@@ -1,18 +1,19 @@
 <h1> Welcome to Godfather Flash "Mob" Cards</h1>
 
-<img src="/../public/img/godfather.jpg">
+<img src= "/img/godfather.jpg" id="godfather_image">
 
-
-<h3><a href="/login">Click here to login</a>
-<h3><a href="/users/new">Click here to sign up</a>
-
+<h3><a href="/login"><button class="main-button">Click here to login</button></a>
+<h3><a href="/users/new"><button class="main-button">Click here to sign up</button></a>
 
 <h2>Pick a deck to play:</h2>
   <% @decks.each do |deck| %>
   <div class="deck-list">
-    <a href="/decks/<%=deck.id%>"><%= deck.subject %></a>
+    <a href="/decks/<%=deck.id%>"><button class="main-button"><%= deck.subject %></button></a>
   </div>
 
 <% end %>
+
+
+
 
 

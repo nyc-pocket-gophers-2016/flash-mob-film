@@ -10,24 +10,14 @@
 <form method="post" action="/users/<%= @user.id %>">
   <input value="put" type="hidden" name="_method">
 <div>
-  <label for="first_name">First Name:</label>
-  <input type="text" name="first_name" value="<%= @user.first_name %>">
-</div>
-
-<div>
-  <label for="last_name">Last Name:</label>
-  <input type="text" name="last_name" value="<%= @user.last_name %>">
-</div>
-
-<div>
-  <label for="email">Email:</label>
-  <input type="text" name="email" value="<%= @user.email %>">
+  <label for="first_name">Username Name:</label>
+  <input type="text" name="username" value="<%= @user.username %>" class="form-text">
 </div>
 
 <div>
   <label for="password">Password:</label>
-  <input type="password" name="password" value="<%= @user.password %>">
+  <input type="password" name="password" value="<%= @user.password %>" class="form-text">
 </div>
 
-  <input type="submit" value="Submit to Update your Profile">
+  <input type="submit" value="Submit to Update your Profile" class="form-button">
 </form>

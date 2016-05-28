@@ -1,9 +1,19 @@
 body {
   text-align: center;
-/*  background-color: black;
-*/  font-family: sans-serif;
-/*  color: white;
-*/}
+  background-color: black;
+  font-family: sans-serif;
+  color: white;
+}
+
+.form-text {
+  color: black;
+}
+
+main {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+}
 
 a:link {
   color: red;
@@ -20,3 +30,42 @@ a:hover {
 a:active {
   color:white;
 }
+
+#godfather_image {
+  width: 25%;
+  height: 25%;
+}
+
+div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.main-button {
+  background-color: #910000;
+  border-radius: .5em;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+
+.form-button {
+  background-color: #910000;
+  border-radius: .5em;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+  .form-button:hover {
+    background-color: #DB0000;
+    text-decoration: none;
+  }
+
+  a.form-button {
+    color: white;
+  }
+
+
