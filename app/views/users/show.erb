@@ -1,0 +1,21 @@
+<h1>Your mobster profile:</h1>
+
+<% if @errors %>
+ <% @errors.each do |error_message| %>
+    <%= error_message %>
+  <% end %>
+<% end %>
+
+<div><%= @user.first_name %> <%= @user.last_name %> </div>
+<div><%= @user.email %></div>
+
+<div>
+  <a href="/users/<%= @user.id %>/edit">Click here to edit your mobster profile</a>
+</div>
+
+<div>
+  <form method="post" action="/users/<%= @user.id %>">
+    <input value="delete" type="hidden" name="_method">
+    <input type="submit" value="Delete your account">
+  </form>
+</div>
