@@ -7,8 +7,11 @@ end
 # Make a new account - post method for submit
 post "/users" do
   @user = User.new(username: params[:username], password: params[:password])
+  @decks = Deck.all
   if @user.save
-    redirect "/users/#{@user.id}"
+    session[:id] = @user.id
+    erb :"decks/index"
+
   else
     @errors = @user.errors.full_messages
     erb :'users/new'

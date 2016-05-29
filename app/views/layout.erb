@@ -19,7 +19,15 @@
 </head>
 <body>
 <main>
-<a href="/decks"> Home</a> | <a href="/login"> Login</a> | <a href="/logout"> Logout</a>
+
+<% if logged_in? %>
+<a href="/decks"><button class="main-button">Home</button></a>  <a href="/logout"> <button class="main-button">Logout</button> </a>
+
+<% else %>
+<a href="/decks"> <button class="main-button"> Home</button></a> <a href="/login"><button class="main-button"> Login</button></a> 
+
+<% end %>
+
   <%= yield %>
   </main>
 </body>
