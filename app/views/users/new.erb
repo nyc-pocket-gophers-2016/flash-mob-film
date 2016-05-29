@@ -1,0 +1,23 @@
+<h1>Create a new mobster account to play Flash Mob!:</h1>
+
+<% if @errors %>
+ <% @errors.each do |error_message| %>
+    <%= error_message %>
+  <% end %>
+<% end %>
+
+<form method="post" action="/users">
+<div>
+<label for="first_name">Username:</label>
+<input type="text" name="username" placeholder="username" class="form-text">
+</div>
+
+<div>
+<label for="password">Password:</label>
+<input type="password" name="password" placeholder="password" class="form-text">
+</div>
+
+<input type="submit" value="Register your account" class="form-button">
+</form>
+</div>
+
